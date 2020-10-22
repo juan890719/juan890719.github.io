@@ -15,7 +15,15 @@
   </head>  
   <body>
     <h1>探索輔大美食Go</h1><br>
-      <p1>
+	<div class="updatename">
+    <p class="hey">
+      Hello
+    </p>
+    <button class="name">
+      Click Me
+    </button>
+    </div>
+    <p1>
       <marquee>(๑•̀ㅂ•́)و✧GO GO GO ~</marquee>
       我是輔大生，此網站分享我吃過的美食<br><br>
     </p1>
@@ -100,7 +108,15 @@
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
+    <script src="https://button.glitch.me/button.js" defer>
+		const para = document.querySelector('.hey');
+		function updateName() {
+			let name = prompt('輸入新的名字');
+			para.textContent = 'Hello~ ' + name;
+		}
+		const buttons = document.querySelector('.name');
+		buttons.addEventListener('click',updateName);
+	</script>
   </body>
 </html>
 <style>
@@ -117,7 +133,21 @@ h1 {
   font-size:35px;
   text-align:center
 }
-p1{
+.updatename{
+  display:flex;
+  justify-content:center;
+}
+.name{
+  font-family:monospace;
+  color:#6699CC;
+  font-weight:bold;
+  border-width:2px;
+  border-color:#ccd4ff;
+  border-radius:40%;
+  background-color:white;
+  margin:10px;
+}
+p1,.hey{
   font-family:monospace;
   color:#6699CC;
   font-weight:bold;
