@@ -5,3 +5,9 @@
 		}
 		const buttons = document.querySelector('.name');
 		buttons.addEventListener('click',updateName);
+		
+		$('h1').click(function() {
+			$(this).css('color', 'pink');
+		});
+		
+		$('.h').show(5000);
