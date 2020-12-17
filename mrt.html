@@ -4,8 +4,8 @@
 		<h1 align=center font-family="monospace">北市捷運圖搜尋</h1>
 	</head>
 	<body><center>
-		<div class="box">
-			<div class="right" style=font-size:20px>
+		<div class="box" style="background-color:#fdf9f2; width:800px;">
+			<div class="right" style="font-size:20px;">
 				<p1 style=color:#AA7700>1.文湖線：
 				<select onChange="location = this.options[this.selectedIndex].value;">
 					<option value="#">請選擇</option>
@@ -21,6 +21,7 @@
 					<option value="#">請選擇</option>
 					<option value="https://juan890719.github.io/guting">古亭站</option>
 					<option value="https://juan890719.github.io/SN">松江南京站</option>
+					<option value="https://juan890719.github.io/ximen">西門站</option>
 				</select></p3><br><br>
 				<p4 style=color:#FFCC22>4.中和新蘆線：
 				<select onChange="location = this.options[this.selectedIndex].value;">
@@ -35,6 +36,7 @@
 					<option value="#">請選擇</option>
 					<option value="https://juan890719.github.io/memorial_hall">國父紀念館站</option>
 					<option value="https://juan890719.github.io/fuchu">府中站</option>
+					<option value="https://juan890719.github.io/ximen">西門站</option>
 				</select></p5><br>
 			</div><br>
 			<img src="https://i.imgur.com/0l4amu7.jpg?1" style="display:block;">
@@ -42,7 +44,16 @@
 	</body>
 </html>
 <style>
-	body {
+	    html {
+        height: 100%;
+    }
+
+    body {
 		font-family="monospace";
-	}
+        background-image: url(https://i.imgur.com/XQK1x7c.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
 </style>
