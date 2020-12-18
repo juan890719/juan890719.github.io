@@ -2,45 +2,44 @@
 	<head>
 		<title>北市捷運圖搜尋</title>
 		<h1 align=center font-family="monospace">北市捷運圖搜尋</h1>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	</head>
 	<body><center>
 		<div class="box" style="background-color:#fdf9f2; width:100%;">
-			<div class="right" style="font-size:20px;">
-				<p1 style=color:#AA7700>1.文湖線：
-				<select onChange="location = this.options[this.selectedIndex].value;">
-					<option value="#">請選擇</option>
+			<div class="right" style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://chin-yan.github.io/web/"><button style="font-size:20px;" type="button" class="btn btn-sm btn-outline-secondary">首頁</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://laiyutong.github.io/country/"><button style="font-size:20px;" type="button" class="btn btn-sm btn-outline-secondary">回上一頁</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<select onChange="location = this.options[this.selectedIndex].value;" style="color:#AA7700; font-size:20px;">
+					<option value="#">文湖線</option>
 					<option value="https://juan890719.github.io/TB">科技大樓站</option>
-				</select></p1><br><br>
-				<p2 style=color:#FF3333>2.淡水信義線：
-				<select onChange="location = this.options[this.selectedIndex].value;">
-					<option value="#">請選擇</option>
+				</select>&nbsp;&nbsp;&nbsp;&nbsp;
+				<select onChange="location = this.options[this.selectedIndex].value;" style="color:#FF3333; font-size:20px;">
+					<option value="#">淡水信義線</option>
 					<option value="https://juan890719.github.io/zhongshan">中山站</option>
-				</select></p2><br><br>
-				<p3 style=color:#008844>3.松山新店線：
-				<select onChange="location = this.options[this.selectedIndex].value;">
-					<option value="#">請選擇</option>
+				</select>&nbsp;&nbsp;&nbsp;&nbsp;
+				<select onChange="location = this.options[this.selectedIndex].value;" style="color:#008844; font-size:20px;">
+					<option value="#">松山新店線</option>
 					<option value="https://juan890719.github.io/guting">古亭站</option>
 					<option value="https://juan890719.github.io/SN">松江南京站</option>
 					<option value="https://juan890719.github.io/ximen">西門站</option>
-				</select></p3><br><br>
-				<p4 style=color:#FFCC22>4.中和新蘆線：
-				<select onChange="location = this.options[this.selectedIndex].value;">
-					<option value="#">請選擇</option>
+				</select>&nbsp;&nbsp;&nbsp;&nbsp;
+				<select onChange="location = this.options[this.selectedIndex].value;" style="color:#FFCC22; font-size:20px;">
+					<option value="#">中和新蘆線</option>
 					<option value="https://juan890719.github.io/guting">古亭站</option>
 					<option value="https://juan890719.github.io/SN">松江南京站</option>
 					<option value="https://juan890719.github.io/FJU">輔大站</option>
 					<option value="https://juan890719.github.io/cailiao">菜寮站</option>
-				</select></p4><br><br>
-				<p5 style=color:#0066FF>5.板南線：
-				<select onChange="location = this.options[this.selectedIndex].value;">
-					<option value="#">請選擇</option>
+				</select>&nbsp;&nbsp;&nbsp;&nbsp;
+				<select onChange="location = this.options[this.selectedIndex].value;" style="color:#0066FF; font-size:20px;">
+					<option value="#">板南線</option>
 					<option value="https://juan890719.github.io/memorial_hall">國父紀念館站</option>
 					<option value="https://juan890719.github.io/fuchu">府中站</option>
 					<option value="https://juan890719.github.io/ximen">西門站</option>
-				</select></p5><br>
+				</select>
 			</div><br>
 			<img src="https://i.imgur.com/0l4amu7.jpg?1" style="display:block;">
 		</div>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	</body>
 </html>
 <style>
@@ -56,4 +55,9 @@
         background-position: center;
         background-size: cover;
     }
+	.right{
+		display:flex;
+		align-items:baseline;
+		
+	}
 </style>
